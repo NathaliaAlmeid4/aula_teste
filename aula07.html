@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html langa="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=divice-width,initial-scale=1.0">
+        <title> document</title>
+            
+    </head>
+    <body>
+      <form  method="get" id="fContato" action="mailto:almeida.nathalia2019@gmail.com" >   
+        <br><br>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+        <label for="cName"> Nome:</label>
+        <input type="text" id="cName">
+    <br>
+        <label for="sName">Sobrenome:</label>
+        <input type="text" id="sName">
+    <br>
+        <label for="eml">E-mail:</label>
+        <input type="text" id="eml" required>
+       
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>times</legend>
+        <label for="time">selecione seu time:</label>
+        <select id="time" name="time">
+         <option value="op1" disabled selected>Selecione seu time</option>
+         <option value="palmeiras">Palmeiras</option>
+         <option value="palmeiras">Corinthians</option>
+         <option value="palmeiras">São Paulo</option>
+         <option value="palmeiras">Santos</option>
+    
+        </select>
+    </fieldset>
+     <br><br>
+     <fieldset>
+        <legend>Dados extras</legend>
+        <label for="cCidade">Qual sua cidade</label>
+        <input type="text" name="cCidade" id="cCidade" list="sugestao" autocomplete="on" placeholder="Sua cidade">
+        <datalist id="sugestao">
+            <option value="Santos"></option>
+            <option value="São Paulo"></option>
+            <option value="Guarulhos"></option>
+            <option value="Rio De Janeiro"></option>
+            <option value="Minas Gerais"></option>
+            <option value="Belo Horizonte"></option>
+        </datalist>
+       </fieldset>
+        <br>
+        <p>utilizando Range</p>
+
+        <input type="range" name="valor_01" id="valor_01">
+        10<br><br>
+        <label for="text">Ideias!</label>
+        <br>
+        <textarea name="text01" id="text01" cols="55" rows="4" placeholder=" caixa de sugestoes" maxlength="50"></textarea>
+
+    <fieldset>
+        <legend>Documentos:</legend>
+        <label for="Eml">E-mail:</label>
+        <input type="text" name="name" id="eml">
+        <br>
+        <label for="sName">Sobrenome:</label>
+        <input type="text" name="sName" id="sName">
+    </fieldset>
+    <br>
+
+<input type="submit" value="Enviar">
+
+    </form>
+</body>
+
+
+</html>
